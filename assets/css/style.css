@@ -1,0 +1,57 @@
+body {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+footer {
+    height: 5%;
+    color: #9D9D95;
+    text-align: center;
+    padding: 10px;
+}
+
+.gamewindow {
+    padding: 30px;
+}
+
+.crystalimg {
+    width: 20%;
+    height: auto;
+    margin-right: 10px;
+    float: left;
+}
+
+#targetScore {
+	background-color: lightgreen;
+	height: 110px;
+	font-size: 30px;
+}
+
+#targetScore p {
+	font-size: inherit;
+}
+
+#winLoss {
+	background-color: lightblue;
+	padding: 20px;
+	margin-left: 20px;
+	height: 110px;
+}
+
+.gamewindow div {
+	margin-bottom: 5px;
+}
+
+.scorediv {
+	background-color: green;
+	color: white;
+}
+
+#yourscore {
+	font-size: 30px
+}
+
+#yourscore p {
+	font-size: inherit;
+	height: 75px;
+}

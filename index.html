@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <link rel="icon" href="assets/images/favicon.ico" type="image/ico" sizes="16x16">
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <!--                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button> -->
+                <a class="navbar-brand" href="#">Crystal Collector</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse navbar-right" aria-expanded="false" style="height: 0.8px;">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Crystal Collector</a></li>
+                    <li><a href="#">Star Wars RPG</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron gamewindow">
+            <div class="row">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+                <p>You win the game by matching your total score to the random number, you lose the game if your total score goes above the random number. The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time the game restarts, the value of each crystal changes.</p>
+            </div>
+            <div class="row">
+                <div id="targetScore" class="col-xs-3">
+                    <p>Hello target score</p>
+                </div>
+                <div id="winLoss" class="col-xs-2">
+                    <p>wins: 0</p>
+                    <p>losses: 0</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <img src="assets/images/green.jpg" class="img-responsive crystalimg">
+                    <img src="assets/images/blue.jpg" class="img-responsive crystalimg">
+                    <img src="assets/images/red.jpg" class="img-responsive crystalimg">
+                    <img src="assets/images/purple.jpg" class="img-responsive crystalimg">
+                </div>
+            </div>
+            <div class="row">
+                <p class="col-xs-3 scorediv">Your total score is:</p>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 scorediv" id="yourscore">
+                <p>0</p>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer-bottom col-xs-12 navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <p>© Copyright 2017 Lawrence Asperilla</p>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
